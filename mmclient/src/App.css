@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  /* overflow: hidden; */
 }
 
 .app {
@@ -57,7 +58,118 @@
 }
 
 .app-user__info-name {
-  font-family: 'Montserrat';
   font-size: large;
   font-weight: 600;
+  font-family: 'Montserrat';
+}
+
+
+
+
+
+.app-total {
+  display: flex;
+  color: white;
+  /* border: 1px solid white; */
+  padding: 2.7rem 1rem;
+  margin: 1.8rem;
+  justify-content: space-around;
+  border-radius: 18px;
+  background-color: #201d1d;
+  position: relative;
+}
+
+.app-total-icon {
+  position: absolute;
+  right: 1rem;
+  top: .2rem;
+  opacity: .2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.income {
+  width: 10rem;
+  height: 8rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 18px;
+  /* align-items: center; */
+  flex-direction: column;
+  /* border: 1px solid white; */
+  background-color: black;
+  position: relative;
+  
+}
+
+.income-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: .2rem;
+  opacity: .2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.income-title {
+  /* border: 1px solid white; */
+  /* padding: 1rem; */
+  font-family: 'Nunito Sans';
+  margin-bottom: 1rem;
+  font-size: small;
+}
+
+.income-value {
+  font-family: 'Montserrat';
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+.expense {
+  width: 10rem;
+  height: 8rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 18px;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+
+}
+
+.expense-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: .2rem;
+  opacity: .2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense-title {
+  font-family: 'Nunito Sans';
+  margin-bottom: 1rem;
+  font-size: small;
+}
+
+
+.expense-value {
+  font-family: 'Montserrat';
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.app-history {
+  color: white;
+  border: 1px solid white;
+  width: calc(100% + 1.5rem);
+  height: 100%;
+  margin-top: -80px;
+  /* border-top-left-radius: 25px;
+  border-top-right-radius: 25px; */
+  background-color: white;
 }
