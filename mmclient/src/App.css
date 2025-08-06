@@ -3,6 +3,7 @@
 
 .app-container {
   width: 100wh;
+  max-height: 100vh;
   height: 100vh;
   background: black;
   display: flex;
@@ -18,7 +19,7 @@
   background: #1f1c1d88;
   /* background: #0e0c0cb1; */
   border-radius: 25px;
-  padding: 1rem 1.5rem;
+  /* padding: 1rem 1.5rem; */
   /* border: 1px solid white; */
 }
 
@@ -31,6 +32,11 @@
   font-family: 'Nunito Sans';
   /* border: 1px solid white; */
 
+}
+
+.top-layer {
+  padding: 1rem 1.5rem;
+  /* border: 1px solid white; */
 }
 
 .app-user {
@@ -64,9 +70,6 @@
 }
 
 
-
-
-
 .app-total {
   display: flex;
   color: white;
@@ -79,6 +82,7 @@
   position: relative;
 }
 
+
 .app-total-icon {
   position: absolute;
   right: 1rem;
@@ -88,6 +92,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .income {
   width: 10rem;
@@ -164,12 +169,128 @@
 }
 
 .app-history {
-  color: white;
-  border: 1px solid white;
-  width: calc(100% + 1.5rem);
-  height: 100%;
-  margin-top: -80px;
-  /* border-top-left-radius: 25px;
-  border-top-right-radius: 25px; */
+  color: black;
+  margin-top: -25%;
+  display: flex;
+  height: calc(100% - 38%);
+  flex-direction: column;
+  justify-content: space-between;
+  flex-flow: column;
+  /* height: calc(100%); */
+  /* border: 1px solid white; */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #eee;
+  padding: 2rem 1.5rem;
+    /* border: 1px solid black; */
+  
+}
+
+.bottom-layer {
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   background-color: white;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+.addButton {
+  /* margin-top: -10px; */
+}
+
+.addButtonContainer {
+  margin-top: -50px;
+  background-color: #eee;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem ;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /* border: 1px solid black; */
+  /* border-radius: 50%; */
+}
+
+.analytics-heading {
+  font-weight: bold;
+   font-family: 'Nunito Sans';
+   /* border: 1px solid black; */
+}
+
+.app-history__1 {
+  margin-top: 6rem;
+  /* border: 1px solid black; */
+}
+
+.app-history__2 {
+  /* margin-top: 6rem; */
+  /* border: 1px solid black; */
+  flex-grow: 1;
+}
+
+.trans-card__details {
+  /* border: 1px solid black; */
+  display: flex;
+  background-color: white;
+  padding: .9rem .8rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.trans-card__amount {
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+
+.trans-card__timestamp {
+  font-family: 'Montserrat';
+  font-size: 12px;
+}
+
+.trans-card__text {
+  font-family: 'Nunito Sans';
+  font-weight: bold;
+  /* flex-grow: ; */
+}
+
+.card-icon {
+  background-color: #eee;
+  transform: scale(1.2);
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.trans-card__iconandtextcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:50%;
+  /* border: 1px solid black; */
+  padding-left: 3px;
+  
+}
+
+.transaction-heading {
+ font-weight: bold;
+  font-family: 'Nunito Sans';
+  font-size: 17px;
+  margin-bottom: 1rem;
+}
+
+.app-history__transactions {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.trans-card__textcontainer {
+  flex-grow: 1;
+  margin-left: 1.3rem;
+  /* border: 1px solid black; */
 }
